@@ -1,0 +1,21 @@
+{
+  "name": "jstransformer-html",
+  "version": "0.1.0",
+  "description": "Reformats HTML in a ways that is sensible for presentation purposes — but awful for production purposes",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "shx mkdir -p dist && coffee -o dist -c ./src",
+    "test": "npm run build && test-jstransformer",
+    "prepublish": "npm run test"
+  },
+  "author": "Wilfred Springer <wilfred@eastpole.nl> http://www.eastpole.nl/",
+  "license": "ISC",
+  "devDependencies": {
+    "coffeescript": "^2.1.1",
+    "shx": "^0.2.2",
+    "test-jstransformer": "^1.0.2"
+  },
+  "dependencies": {
+    "html": "^1.0.0"
+  }
+}
